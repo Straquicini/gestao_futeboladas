@@ -70,6 +70,7 @@ Configurar o arquivo inc/config.php:
 
 php
 Copiar código
+
 $host = "localhost";
 $user = "root";
 $pass = "";
