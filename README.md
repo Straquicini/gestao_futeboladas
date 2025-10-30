@@ -68,15 +68,12 @@ Importar o script SQL (caso exista)
 
 Configurar o arquivo inc/config.php:
 
-php
-Copiar código
+## php
+Copiar código:
 
 $host = "localhost";
-
 $user = "root";
-
 $pass = "";
-
 $db   = "2025_2p_futebolada";
 
 Acessar no navegador:
