@@ -72,9 +72,13 @@ php
 Copiar código
 
 $host = "localhost";
+
 $user = "root";
+
 $pass = "";
+
 $db   = "2025_2p_futebolada";
+
 Acessar no navegador:
 
 ---
