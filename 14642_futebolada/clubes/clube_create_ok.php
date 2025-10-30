@@ -16,7 +16,7 @@ $msg = 'Criado com sucesso!';
     <p><?=$msg?></p>
     <?php endif; ?>
 
-    <button type="button" class="danger" onclick="javascript:location.href='curso_read.php'">
+    <button type="button" class="danger" onclick="javascript:location.href='clube_read.php'">
         Voltar à listagem 
     </button>
 

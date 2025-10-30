@@ -3,7 +3,7 @@ function pdo_connect_mysql() {
     $DATABASE_HOST = 'localhost';
     $DATABASE_USER = 'root';
     $DATABASE_PASS = '';
-    $DATABASE_NAME = 'futebolada_2p';
+    $DATABASE_NAME = '2025_2p_futebolada';
     try {
     	return new PDO('mysql:host=' . $DATABASE_HOST . ';dbname=' . $DATABASE_NAME . ';charset=utf8', $DATABASE_USER, $DATABASE_PASS);
     } catch (PDOException $exception) {
@@ -27,7 +27,7 @@ echo <<<EOT
     		<h1>Futebolada 2P 2025</h1>
             <a href="{$project_path}/index.php"><i class="fas fa-home"></i>Home</a>
     		<a href="{$project_path}/tabelas/tabela_read.php"><i class="fas fa-bars"></i>Tabelas</a>
-			<a href="{$project_path}/jogadores/jogador_read.php"><i class="fas fa-address-card"></i>Jogadores</a>
+			<a href="{$project_path}/clubes/clube_read.php"><i class="fa fa-futbol-o"></i>Clubes</a>
     	</div>
     </nav>
 EOT;

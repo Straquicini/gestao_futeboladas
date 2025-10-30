@@ -24,10 +24,10 @@ if ($pag_end > $num_clubes) $pag_end = $num_clubes;
 ?>
 
 
-<?=template_header('Tabelas : Lista', $project_path)?>
+<?=template_header('Clubes : Lista', $project_path)?>
 
 <div class="content read">
-	<h2>Tabelas : Lista</h2>
+	<h2>Clubes : Lista</h2>
 	<a href="clube_create.php" class="create-contact">Criar clube</a>
     <p>
         A mostrar pag <?php echo ($pag_begin) . " a " . $pag_end; ?>
@@ -38,18 +38,22 @@ if ($pag_end > $num_clubes) $pag_end = $num_clubes;
         <thead>
             <tr>
                 <td>#</td>
-                <td>Nome da tabela</td>
+                <td>Nome do clube</td>
+                <td></td>
+                <td>#</td>
+                <td>Cor do clube</td>
                 <td></td>
             </tr>
         </thead>
         <tbody>
-            <?php foreach ($lista_tabelas as $item): ?>
+            <?php foreach ($lista_clubes as $item): ?>
             <tr>
-                <td><?=$item['idtabela']?></td>
+                <td><?=$item['idclube']?></td>
                 <td><?=$item['nome']?></td>
+                <td style="background: <?=$item['cor']?>;"></td>
                 <td class="actions">
-                    <a href="tabela_update.php?id=<?=$item['idtabela']?>" class="edit"><i class="fas fa-pen fa-xs"></i></a>
-                    <a href="tabela_delete.php?id=<?=$item['idtabela']?>" class="trash"><i class="fas fa-trash fa-xs"></i></a>
+                    <a href="clube_update.php?id=<?=$item['idclube']?>" class="edit"><i class="fas fa-pen fa-xs"></i></a>
+                    <a href="clube_delete.php?id=<?=$item['idclube']?>" class="trash"><i class="fas fa-trash fa-xs"></i></a>
                 </td>
             </tr>
             <?php endforeach; ?>
@@ -57,10 +61,10 @@ if ($pag_end > $num_clubes) $pag_end = $num_clubes;
     </table>
 	<div class="pagination">
 		<?php if ($page > 1): ?>
-		<a href="tabela_read.php?page=<?=$page-1?>"><i class="fas fa-angle-double-left fa-sm"></i></a>
+		<a href="clube_read.php?page=<?=$page-1?>"><i class="fas fa-angle-double-left fa-sm"></i></a>
 		<?php endif; ?>
-		<?php if ($page*$records_per_page < $num_tabelas): ?>
-		<a href="tabela_read.php?page=<?=$page+1?>"><i class="fas fa-angle-double-right fa-sm"></i></a>
+		<?php if ($page*$records_per_page < $num_clubes): ?>
+		<a href="clube.php?page=<?=$page+1?>"><i class="fas fa-angle-double-right fa-sm"></i></a>
 		<?php endif; ?>
 	</div>
 </div>
