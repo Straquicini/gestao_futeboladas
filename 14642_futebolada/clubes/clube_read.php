@@ -39,9 +39,8 @@ if ($pag_end > $num_clubes) $pag_end = $num_clubes;
             <tr>
                 <td>#</td>
                 <td>Nome do clube</td>
-                <td></td>
-                <td>#</td>
                 <td>Cor do clube</td>
+                <td>Hino do clube</td>
                 <td></td>
             </tr>
         </thead>
@@ -51,6 +50,7 @@ if ($pag_end > $num_clubes) $pag_end = $num_clubes;
                 <td><?=$item['idclube']?></td>
                 <td><?=$item['nome']?></td>
                 <td style="background: <?=$item['cor']?>;"></td>
+                <td><?=str_replace("\n", "<br>", $item)['hino']?></td>
                 <td class="actions">
                     <a href="clube_update.php?id=<?=$item['idclube']?>" class="edit"><i class="fas fa-pen fa-xs"></i></a>
                     <a href="clube_delete.php?id=<?=$item['idclube']?>" class="trash"><i class="fas fa-trash fa-xs"></i></a>

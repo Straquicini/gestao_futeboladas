@@ -27,7 +27,7 @@ echo <<<EOT
     		<h1>Futebolada 2P 2025</h1>
             <a href="{$project_path}/index.php"><i class="fas fa-home"></i>Home</a>
     		<a href="{$project_path}/tabelas/tabela_read.php"><i class="fas fa-bars"></i>Tabelas</a>
-			<a href="{$project_path}/clubes/clube_read.php"><i class="fa fa-futbol-o"></i>Clubes</a>
+			<a href="{$project_path}/clubes/clube_read.php"><i class="fa fa-life-ring"></i>Clubes</a>
     	</div>
     </nav>
 EOT;

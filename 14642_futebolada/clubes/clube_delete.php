@@ -15,10 +15,18 @@ if (isset($_GET['id'])) {
     // Make sure the user confirms beore deletion
     if (isset($_GET['confirm'])) {
         if ($_GET['confirm'] == 'yes') {
-            // User clicked the "Yes" button, delete record
-            $stmt = $pdo->prepare('DELETE FROM clube WHERE idclube = ?');
-            $stmt->execute([$_GET['id']]);
-            $msg = 'Registro eliminado com sucesso!';
+            try {
+                $stmt = $pdo->prepare('DELETE FROM clube WHERE idclube = ?');
+                $stmt->execute([$_GET['id']]);
+                $msg = 'Registro eliminado com sucesso!';
+            } catch (PDOException $e) {
+                // Código de erro 23000 = violação de chave estrangeira
+                if ($e->getCode() == 23000) {
+                    $msg = 'Não é possível eliminar este clube porque está associado a outros registos.';
+                } else {
+                    $msg = 'Ocorreu um erro ao eliminar o registo: ' . $e->getMessage();
+                }
+            }
         } else {
             // User clicked the "No" button, redirect them back to the read page
             header('Location: clube_read.php');
