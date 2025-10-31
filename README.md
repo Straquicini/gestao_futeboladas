@@ -55,7 +55,7 @@ Cada módulo do sistema (clubes e tabelas) permite:
 
 ## 🚀 Como Executar o Projeto
 
-**Clonar o repositório:**\
+**Clonar o repositório:**
 
 Mover para a pasta do servidor local:
 
