@@ -18,28 +18,28 @@ Cada módulo do sistema (clubes e tabelas) permite:
 
 ## 📁 Estrutura do Projeto
 
-14642_FUTEBOLADA/
-├── clubes/
-│ ├── clube_create.php # Formulário de criação de clube
-│ ├── clube_create_ok.php # Processa o cadastro no banco
-│ ├── clube_read.php # Lista os clubes
-│ ├── clube_update.php # Atualiza informações de um clube
-│ ├── clube_delete.php # Exclui um clube
-│
-├── tabelas/
-│ ├── tabela_create.php
-│ ├── tabela_create_ok.php
-│ ├── tabela_read.php
-│ ├── tabela_update.php
-│ ├── tabela_delete.php
-│
-├── inc/
-│ ├── config.php # Configuração do banco de dados
-│ ├── functions.php # Funções auxiliares PHP
-│
-├── css/
-│ └── style.css # Estilos da interface
-│
+14642_FUTEBOLADA/\
+├── clubes/\
+│ ├── clube_create.php # Formulário de criação de clube\
+│ ├── clube_create_ok.php # Processa o cadastro no banco\
+│ ├── clube_read.php # Lista os clubes\
+│ ├── clube_update.php # Atualiza informações de um clube\
+│ ├── clube_delete.php # Exclui um clube\
+│\
+├── tabelas/\
+│ ├── tabela_create.php\
+│ ├── tabela_create_ok.php\
+│ ├── tabela_read.php\
+│ ├── tabela_update.php\
+│ ├── tabela_delete.php\
+│\
+├── inc/\
+│ ├── config.php # Configuração do banco de dados\
+│ ├── functions.php # Funções auxiliares PHP\
+│\
+├── css/\
+│ └── style.css # Estilos da interface\
+│\
 └── index.php # Página inicial
 
 ---
