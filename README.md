@@ -55,7 +55,8 @@ Cada módulo do sistema (clubes e tabelas) permite:
 
 ## 🚀 Como Executar o Projeto
 
-1. **Clonar o repositório:**\
+**Clonar o repositório:**\
+
 Mover para a pasta do servidor local:
 
 - Exemplo (XAMPP): C:\xampp\htdocs\14642_futebolada
