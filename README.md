@@ -55,37 +55,37 @@ Cada módulo do sistema (clubes e tabelas) permite:
 
 ## 🚀 Como Executar o Projeto
 
-1. **Clonar o repositório:**
-Mover para a pasta do servidor local:\
+1. **Clonar o repositório:**\
+Mover para a pasta do servidor local:
 
-Exemplo (XAMPP): C:\xampp\htdocs\14642_futebolada
+- Exemplo (XAMPP): C:\xampp\htdocs\14642_futebolada
 
-Configurar o banco de dados:
+- Configurar o banco de dados:
 
-Criar um banco no phpMyAdmin chamado futebolada
+- Criar um banco no phpMyAdmin chamado futebolada
 
-Importar o script SQL (caso exista)
+- Importar o script SQL (caso exista)
 
-Configurar o arquivo inc/config.php:
+- Configurar o arquivo inc/config.php:
 
 ## php
-Copiar código:\
+Copiar código:
 
 $host = "localhost";\
 $user = "root";\
 $pass = "";\
-$db   = "2025_2p_futebolada";\
+$db   = "2025_2p_futebolada";
 
 Acessar no navegador:
 
 ---
 
-🧩 Funcionamento do CRUD
-Ação	Arquivo	Descrição
-Create	clube_create.php, tabela_create.php	- Formulário para inserir novos dados
-Read	clube_read.php, tabela_read.php -	Exibe todos os registros cadastrados
-Update	clube_update.php, tabela_update.php	- Permite editar registros existentes
-Delete	clube_delete.php, tabela_delete.php	- Remove registros do banco
+🧩 Funcionamento do CRUD\
+Ação	Arquivo	Descrição\
+Create	clube_create.php, tabela_create.php	- Formulário para inserir novos dados\
+Read	clube_read.php, tabela_read.php -	Exibe todos os registros cadastrados\
+Update	clube_update.php, tabela_update.php	- Permite editar registros existentes\
+Delete	clube_delete.php, tabela_delete.php	- Remove registros do banco\
 
 Cada uma dessas operações é feita através de requisições PHP conectadas ao MySQL, mostrando de forma prática como funciona o CRUD completo.
 
