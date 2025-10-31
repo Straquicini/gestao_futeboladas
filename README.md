@@ -56,7 +56,7 @@ Cada módulo do sistema (clubes e tabelas) permite:
 ## 🚀 Como Executar o Projeto
 
 1. **Clonar o repositório:**
-Mover para a pasta do servidor local:
+Mover para a pasta do servidor local:\
 
 Exemplo (XAMPP): C:\xampp\htdocs\14642_futebolada
 
@@ -69,12 +69,12 @@ Importar o script SQL (caso exista)
 Configurar o arquivo inc/config.php:
 
 ## php
-Copiar código:
+Copiar código:\
 
-$host = "localhost";
-$user = "root";
-$pass = "";
-$db   = "2025_2p_futebolada";
+$host = "localhost";\
+$user = "root";\
+$pass = "";\
+$db   = "2025_2p_futebolada";\
 
 Acessar no navegador:
 
