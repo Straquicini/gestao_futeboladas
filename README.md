@@ -60,7 +60,7 @@ Mover para a pasta do servidor local:
 
 - Exemplo (XAMPP): C:\xampp\htdocs\14642_futebolada
 
-- Configurar o banco de dados:
+Configurar o banco de dados:
 
 - Criar um banco no phpMyAdmin chamado futebolada
 
@@ -76,12 +76,13 @@ $user = "root";\
 $pass = "";\
 $db   = "2025_2p_futebolada";
 
-Acessar no navegador:
+Acessar no navegador
 
 ---
 
 🧩 Funcionamento do CRUD\
 Ação	Arquivo	Descrição\
+
 Create	clube_create.php, tabela_create.php	- Formulário para inserir novos dados\
 Read	clube_read.php, tabela_read.php -	Exibe todos os registros cadastrados\
 Update	clube_update.php, tabela_update.php	- Permite editar registros existentes\
@@ -106,7 +107,7 @@ Organização de diretórios em um projeto web
 🚧 Em desenvolvimento — Projeto em fase de testes e aprimoramento para fins educacionais.
 
 👨‍💻 Autor
-Aluno: [Renan Straquicini]
+Aluno: [Renan Straquicini]\
 Ano: 2025
 
 📜 Licença
