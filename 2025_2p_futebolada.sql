@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 30-Out-2025 às 12:02
+-- Tempo de geração: 31-Out-2025 às 11:48
 -- Versão do servidor: 10.4.32-MariaDB
 -- versão do PHP: 8.2.12
 
@@ -68,9 +68,9 @@ CREATE TABLE `clube` (
 
 INSERT INTO `clube` (`idclube`, `nome`, `cor`, `hino`) VALUES
 (1, 'Santos', '#000000', '        gsgbgs'),
-(2, 'Flamengo', '#d21919', '        Uma vez flamengo nunca mais flamengo'),
+(2, 'Flamengo', '#d21919', 'Uma vez flamengo\r\nnunca mais flamengo'),
 (3, 'SP', '#ec1313', '        o menor de sp'),
-(4, 'Palmeira', '#269424', '        vintao');
+(6, 'Palmeiras', '#07c00a', '        Vintao');
 
 -- --------------------------------------------------------
 
@@ -285,7 +285,7 @@ ALTER TABLE `tabela`
 -- AUTO_INCREMENT de tabela `clube`
 --
 ALTER TABLE `clube`
-  MODIFY `idclube` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `idclube` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 
 --
 -- AUTO_INCREMENT de tabela `joga`
